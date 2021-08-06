@@ -1,0 +1,55 @@
+table{
+    margin-top: 20px;
+    width:700px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.5);
+   
+    border-right: 1px solid rgba(255,255,255,0.3);
+    background: rgba(124, 116, 116, 0.1);
+    border-bottom: 3px solid rgba(255,255,255,0.2);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    height:350px;
+}
+.bttn{
+    float:right;
+    width:160px;
+    height:40px;
+}
+tbody{
+    font-size: 15px;
+    font-weight:500;
+   
+}
+.api{
+    display: flex;
+    justify-content: center;
+}
+.last{
+    display: flex;
+    justify-content: center;
+}
+.fortable{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+.closebtn{
+    display: flex;
+    justify-content: center;
+}
+.closebtn button{
+    width:150px;
+    height:40px;
+}
+

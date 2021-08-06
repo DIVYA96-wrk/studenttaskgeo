@@ -1,0 +1,60 @@
+table{
+    margin-top: 20px;
+    width:700px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.5);
+   
+    border-right: 1px solid rgba(255,255,255,0.3);
+    background: rgba(43, 31, 31, 0.1);
+    border-bottom: 3px solid rgba(255,255,255,0.2);
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width:160px;
+    height:40px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.detailview{
+    display: flex;
+    justify-content: center;
+}
+
+tbody{
+    color:white
+}
+.special{
+    background-color: orange;
+}
+.another{
+    color:black
+}
+.pass{
+    border:1px solid black;
+    width:80px;
+    height:18px;
+    background-color: green;
+    color:white
+
+}
+.fail{
+    border:1px solid black;
+    width:80px;
+    height:18px;
+    background-color: red;
+    color:white
+}
+.totalmark{
+    border:1px solid black;
+    width:200px;
+    height:18px;
+    background-color:Orange;
+    color:white
+
+}

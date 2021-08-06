@@ -1,0 +1,74 @@
+<div class="details">
+  <h1>STUDENT MARK DETAILS</h1>
+    <div class="detailview" *ngFor="let elements of studentDetails">
+
+        <div *ngIf="elements.stdcode==id">
+
+
+            <h2>
+               Name: {{elements.username}} <br/>
+               ID:{{id}} 
+
+               
+             </h2>
+             <div class="pass">
+              <span  ></span> <span>PASS</span>
+         </div>
+         <div class="fail">
+            <span ></span> <span>FAIL</span>
+
+         </div>
+         <div class="totalmark">
+            <span ></span> <span>TOTAL MARK BELOW AVERAGE</span>
+
+         </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>SUBJECT</th>
+                        <th>MARK</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    
+                        <tr [ngStyle]="{'background-color':elements.English >=50? 'green' : 'red' }">
+                        
+                                <td>English</td>
+                                <td>{{elements.English}}</td>
+                            
+                           
+                        </tr>
+                    
+
+                <tr [ngStyle]="{'background-color':elements.Hindi >50  ? 'green' : 'red' }">
+                    <td>Hindi</td>
+                    <td>{{elements.Hindi}}</td>
+                </tr>  
+                <tr [ngStyle]="{'background-color':elements.Maths >50? 'green' : 'red' }">
+                    <td>Maths</td>
+                    <td>{{elements.Maths}}</td>
+                </tr>
+                <tr [ngStyle]="{'background-color':elements.Science >50 ? 'green' : 'red' }">
+                    <td>Science</td>
+                    <td>{{elements.Science}}</td>
+                </tr> 
+               
+                <tr [ngClass]="isSpecial?'special':'another'" >
+                    <td>Total</td>
+                    <td>{{elements.stdMark}}</td>
+                </tr>        
+                </tbody>
+            </table>
+       
+        </div>
+      
+
+    </div>
+    <br/><br/>
+    <div class="btn">
+        <button type="button" (click)="back()">BACK</button>
+    </div>
+   
+</div>

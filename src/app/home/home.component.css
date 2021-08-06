@@ -1,0 +1,42 @@
+.navcontainer{
+    background-color: rgb(134, 131, 131);
+    height:80px;
+    
+}
+nav a{
+    display: flex;
+    justify-content: right;
+    color:cornsilk;
+    font-size: 20px;
+}
+.html{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.content{
+    position: relative;
+    top:200px;
+   color: cornsilk;
+   font-size: 50px;
+}
+.maincontainer{
+    height:750px;
+    background-color: rgb(107, 106, 103);
+}
+
+.login{
+    float:right;
+    margin-top: 30px;
+    margin-right:25px;
+    width:160px;
+    height:50px;
+    background-color: rgb(161, 158, 155);
+    color: rgb(253, 252, 251);
+    font-weight: 800;
+    font-size: 25px;
+}
+p{
+    text-align: center;
+}
