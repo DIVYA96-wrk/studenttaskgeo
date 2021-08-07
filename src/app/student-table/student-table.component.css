@@ -1,4 +1,4 @@
-table{
+table,th,td{
     margin-top: 20px;
     width:700px;
     backdrop-filter: blur(5px);
@@ -17,6 +17,7 @@ h1{
     display: flex;
     justify-content: center;
     height:350px;
+    border:1px 
 }
 .bttn{
     float:right;
@@ -31,6 +32,47 @@ tbody{
 .api{
     display: flex;
     justify-content: center;
+}
+.api button{
+    height:35px;
+    background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+
+}
+.api button:hover{
+    opacity: 1
+
+}
+.view button{
+    height:35px;
+    background-color: #6c80c0;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+
+}
+.view button:hover{
+    opacity:1
 }
 .last{
     display: flex;
@@ -51,5 +93,57 @@ h3{
 .closebtn button{
     width:150px;
     height:40px;
+    background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
 }
-
+.closebtn button:hover{
+    opacity: 1
+}
+.heads{
+    margin-left:100px ;
+}
+.navigation{
+    background-color: rgb(226, 211, 211);
+    height:890px;
+}
+.heads h1{
+    text-shadow: 2px 2px 5px rgb(219, 128, 128);
+}
+.navi button{
+  position: relative;
+  top: 25px;
+  right:20px;
+    width:150px;
+    height:40px;
+    background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.row{
+    position: relative;
+    top: 65px;
+}
+/* .navi{
+    margin-top:35px;
+} */

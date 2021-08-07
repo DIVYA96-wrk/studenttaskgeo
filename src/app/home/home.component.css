@@ -1,4 +1,6 @@
-.navcontainer{
+nav{
+    position: relative;
+    top:15px;
     background-color: rgb(134, 131, 131);
     height:80px;
     
@@ -39,4 +41,22 @@ nav a{
 }
 p{
     text-align: center;
+    text-shadow: 2px 2px 5px red ;
+}
+.navcontainer button{
+    width:150px;
+    height:40px;
+    background-color: #fc470b;
+  border: none;
+  color: rgb(233, 224, 224);
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
 }

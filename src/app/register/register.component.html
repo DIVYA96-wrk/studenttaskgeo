@@ -10,30 +10,32 @@
                             <h1>Register Here</h1>
                         </div> <br>
                         <div class="customer">
-                            <input type="text" name="customername" placeholder="Your Name" class="one">
+                            <input type="text" name="customername" placeholder="Your Name" class="one" [(ngModel)]="cusname">
                         </div> <br />
                         <div class="password">
-                            <input type="password" name="password" placeholder="Set a Password" class="one">
+                            <input type="password" name="password" placeholder="Set a Password" class="one" [(ngModel)]="cuspass">
                         </div> <br> <hr>
                         <p>Gender:</p>
                         <div>
-                            <input type="radio" id="male" name="fav_language" value="MALE">
+                            <input type="radio" id="male" name="fav_language" value="MALE" [(ngModel)]="Gender">
                             <label for="male">Male</label>
                               
-                              <input type="radio" id="female" name="fav_language" value="FEMALE">
+                              <input type="radio" id="female" name="fav_language" value="FEMALE" [(ngModel)]="Gender">
                             <label for="female">Female</label>
                         
-                        </div> <hr>
+                        </div> 
+                        
+                    <p>Gender Selected:{{Gender}}</p><hr>
                         <p>Enter your Class:</p>
-                        <select>
-                            <option value="one">Class 1</option>
-                            <option value="volvo">Class 2</option>
-                            <option value="volvo">Class 3</option>
-                            <option value="volvo">Class 4</option>
-                        </select> <hr>
+                        <select [(ngModel)]="onOptionsSelected"  name="select">
+                            <option *ngFor=" let c of class"  >{{c}}</option>
+                           
+                        </select> 
+                        <p>Class selected:{{onOptionsSelected}}</p><hr>
                         <br /> <br>
                         <div class="bnt">
                             <button type="submit" class="buto" (click)="register()">Register</button>
+                            <button type="submit" class="buto" (click)="back()">Back</button>
                         </div>
                         <br /> <br />
 

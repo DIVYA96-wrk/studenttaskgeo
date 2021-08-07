@@ -52,9 +52,19 @@ tbody{
 }
 .totalmark{
     border:1px solid black;
-    width:200px;
+    width:250px;
     height:18px;
     background-color:Orange;
     color:white
-
+}
+tr{
+    height:50px;
+    font-size: 25px;
+}
+ td:hover{
+    background-color:brown ;
+}
+.row{
+    background-color: rgb(211, 200, 187);
+    height:780px;
 }

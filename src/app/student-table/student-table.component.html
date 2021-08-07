@@ -1,98 +1,110 @@
-<div class="tablecontent">
-    <div class="navigation">
-        <nav>
+<div class="navigation">
+    
 
-            <div class="navi">
-                <button class="bttn" type="submit" (click)="logout()">LOGOUT</button>
-            </div>
-
-
-        </nav>
-    </div>
-    <br>
-
-
-
-    <div>
-        <h1>STUDENT RECORD BOOK</h1>
-        <div class="details">
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Student Name</th>
-                        <th scope="col">Student Code</th>
-                        <th scope="col">Student Class</th>
-                        <th scope="col">Student Mark</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let elements of studentDetails">
-                        <td>{{elements["username"]}}</td>
-                        <td>{{elements.stdcode}}</td>
-                        <td>{{elements["stdclass"]}}</td>
-                        <td>{{elements["stdMark"]}}</td>
-                        <!-- <td><button type="button" (click)="view(elements.stdcode)" >View in Detail</button></td> -->
-                        <td><button type="button" [routerLink]="['/stdetail', elements.stdcode]">View in Detail</button>
-                        </td>
-
-                    </tr>
-                </tbody>
-            </table>
+        <div class="navi">
+            <button class="bttn" type="submit" (click)="logout()">LOGOUT</button>
         </div>
-        <div>
-            <br><br>
-            <div class="api">
-                <button type="submit" (click)="showdata()">
-                    CLICK HERE FOR API CALLING
-                </button>
-            </div>
-            <div *ngIf="closeflag">
 
 
-                <div *ngFor="let elements of html_data">
-                    <h3>Client Details</h3>
+    
 
 
-                    <div class="fortable">
-                        <table>
-
-                            <tbody>
-                                <tr>
-                                    <td>Cleintid</td>
-                                    <td> {{elements.Clientid}}</td>
-                                </tr>
-                                <tr>
-                                    <td>ClientFirstNAme</td>
-                                    <td>{{elements.ClientFirstNAme}}</td>
-                                </tr>
-                                <tr>
-                                    <td>ClientLastName</td>
-                                    <td>{{elements.ClientLastName}}</td>
-                                </tr>
-                                <tr>
-                                    <td>BankName</td>
-                                    <td>{{elements.BankName}}</td>
-                                </tr>
-                                <tr>
-                                    <td>BankAc</td>
-                                    <td>{{elements.BankAc}}</td>
-                                </tr>
-                            </tbody>
-
-                        </table>
-                    </div>  <br>
-                    <div class="closebtn">
-                        <button type="submit" (click)="close()">
-                            Close
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <div class="tablecontent">
+           
+            <br>
+        
+        <div class="heads">
+            <h1>STUDENT RECORD BOOK</h1>
+        </div>
+          
+            <div>
+                
+                <div class="details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Student Name</th>
+                                <th scope="col">Student Code</th>
+                                <th scope="col">Student Class</th>
+                                <th scope="col">Student Mark</th>
+        
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let elements of studentDetails">
+                                <td>{{elements["username"]}}</td>
+                                <td>{{elements.stdcode}}</td>
+                                <td>{{elements["stdclass"]}}</td>
+                                <td>{{elements["stdMark"]}}</td>
+                                <!-- <td><button type="button" (click)="view(elements.stdcode)" >View in Detail</button></td> -->
+                                <td class="view"><button type="button" [routerLink]="['/stdetail', elements.stdcode]">View in Detail</button>
+                                </td>
+        
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <br><br>
+                    <div class="api">
+                        <button type="submit" (click)="showdata()">
+                            CLICK HERE FOR API CALLING
                         </button>
                     </div>
-
+                    <div *ngIf="closeflag">
+        
+        
+                        <div *ngFor="let elements of html_data">
+                            <h3>Client Details</h3>
+        
+        
+                            <div class="fortable">
+                                <table>
+        
+                                    <tbody>
+                                        <tr>
+                                            <td>Cleintid</td>
+                                            <td> {{elements.Clientid}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ClientFirstNAme</td>
+                                            <td>{{elements.ClientFirstNAme}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ClientLastName</td>
+                                            <td>{{elements.ClientLastName}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BankName</td>
+                                            <td>{{elements.BankName}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BankAc</td>
+                                            <td>{{elements.BankAc}}</td>
+                                        </tr>
+                                    </tbody>
+        
+                                </table>
+                            </div>  <br>
+                            <div class="closebtn">
+                                <button type="submit" (click)="close()">
+                                    Close
+                                </button>
+                            </div>
+        
+                        </div>
+                    </div>
+                    </div>
+                    <!-- <div class="DETAIL" *ngIf="flag">
+            <app-student-detail [items]="scode" (onCancel)="onCancel()" ></app-student-detail>
+        </div> -->
                 </div>
             </div>
-            </div>
-            <!-- <div class="DETAIL" *ngIf="flag">
-    <app-student-detail [items]="scode" (onCancel)="onCancel()" ></app-student-detail>
-</div> -->
-        </div>
+        
     </div>
+    <div class="col-4"></div>
+</div>
+</div>

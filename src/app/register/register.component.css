@@ -14,7 +14,7 @@
    
     border-right: 1px solid rgba(255,255,255,0.3);
     border-bottom: 3px solid rgba(255,255,255,0.2);
-    margin-top: 120px;
+    margin-top: 60px;
    
   
 
@@ -48,7 +48,7 @@ form h1{
        display: flex;
        justify-content: center;
        background-color: wheat;
-       height:750px;
+       height:780px;
    }
    ::placeholder{
        color:white
